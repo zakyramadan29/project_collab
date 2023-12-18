@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="menu.css">
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="menu-btn" style="color: #739072; ">&#9776; Menu</div>
+        <a style="margin-top: 50px; color: black;" href="#dashboard">Dashboard</a>
+        <a style="color: black;" href="#">Profile</a>
+        <a style="color: black;" href="#">Settings</a>
+        <a style="color: black;" href="#">Logout</a>
+    </div>
+    <div class="content">
+        <!-- Content of the page goes here -->
+        <h1>Welcome to Dashboard</h1>
+        <p>This is the main content area of your dashboard.</p>
+    </div>
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn');
+        const sidebar = document.querySelector('.sidebar');
+
+        menuBtn.addEventListener('click', () => {
+            sidebar.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>
